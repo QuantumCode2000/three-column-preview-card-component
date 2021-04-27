@@ -36,7 +36,16 @@
     <div id="app" class="main">
 
       <button id="btn"  onclick="getRandomColor()">
-        ADD CARDS</button>
+
+        ADD CARDS
+
+      </button>
+
+      <button id="btn2"  >
+
+        ADD CARDS
+        
+      </button>
         
     </div>
 
@@ -79,12 +88,40 @@
   /*const  hero = document.getElementById("colorpad");
   console.log(hero);*/
 
-  $("#btn").addEventListener("click",function(){
+
+
+  $("#btn2").addEventListener("click",function(){
         const  hero = document.getElementById("colorpad");
-        const heroCopy = hero.cloneNode(true) 
+        const heroCopy = hero.cloneNode(true) ;
+        
         $("#container").appendChild(heroCopy);
         console.log(heroCopy);
   })
+
+let id=0;
+function x(id){
+          id=++id;
+          console.log(id);
+          return id
+  }
+
+  let incremet = 0;
+  
+
+  $("#btn").addEventListener("click",function(){
+        const  hero = document.getElementById("colorpad");
+        const heroCopy = hero.cloneNode(true);
+        heroCopy.removeAttribute("id");
+        heroCopy.setAttribute("id",`e${ incremet++ }`);
+        $("#container").appendChild(heroCopy);
+        console.log(heroCopy);
+  })
+
+  
+
+
+
+
   function $(selector){
     return document.querySelector(selector);
   }
