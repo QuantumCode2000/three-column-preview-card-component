@@ -11,7 +11,9 @@ body {
     min-height: 100vh; 
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
+
 
 .container {
     display: flex;
@@ -22,13 +24,21 @@ body {
 }
 
 .card {
+    display: flex;  
     width: 290px;
     height: 475px;
     overflow: hidden;
+    justify-content: center;
+    
+    flex-direction: column;
+    
+
 }
 
 .sedans {
+
     background: var(--color-Bright-orange);
+
 }
 
 .suvs {
@@ -38,3 +48,25 @@ body {
 .luxury {
     background: var(--color-Very-dark-cyan);
 }
+h1,p,button{
+    margin: 20px;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;   
+    color: hsl(0, 0%, 95%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+    background: hsl(0, 0%, 95%) ;
+    color: hsl(184, 100%, 22%);
+}
+.logo {
+    margin: 10px;
+}
+
+
