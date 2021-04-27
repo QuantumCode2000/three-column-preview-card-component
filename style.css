@@ -1,0 +1,40 @@
+:root {
+    /*Primary Colors*/
+    --color-Bright-orange: hsl(31, 77%, 52%);
+    --color-Dark-cyan: hsl(184, 100%, 22%);
+    --color-Very-dark-cyan: hsl(179, 100%, 13%)
+}
+
+body {
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 0.75) ;
+    min-height: 100vh; 
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+
+
+}
+
+.card {
+    width: 290px;
+    height: 475px;
+    overflow: hidden;
+}
+
+.sedans {
+    background: var(--color-Bright-orange);
+}
+
+.suvs {
+    background: var(--color-Dark-cyan);
+}
+
+.luxury {
+    background: var(--color-Very-dark-cyan);
+}
