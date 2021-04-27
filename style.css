@@ -5,6 +5,8 @@
     --color-Very-dark-cyan: hsl(179, 100%, 13%)
 }
 
+
+
 body {
     display: flex;
     background-color: hsla(0, 0%, 100%, 0.75) ;
@@ -12,42 +14,9 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
-}
-
-
-.container {
-    display: flex;
-    flex-direction: row;
-    
-
-
-}
-
-.card {
-    display: flex;  
-    width: 290px;
-    height: 475px;
-    overflow: hidden;
-    justify-content: center;
-    
     flex-direction: column;
-    
-
 }
 
-.sedans {
-
-    background: var(--color-Bright-orange);
-
-}
-
-.suvs {
-    background: var(--color-Dark-cyan);
-}
-
-.luxury {
-    background: var(--color-Very-dark-cyan);
-}
 h1,p,button{
     margin: 20px;
 }
@@ -66,11 +35,68 @@ button {
     border: 3px solid transparent ;
     border-radius: 30px;
     cursor: pointer;
-    background: hsl(0, 0%, 95%) ;
-    color: hsl(184, 100%, 22%);
+    background: grey;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    border-color: aliceblue;
 }
+
+.boton {
+    background: #000 ;
+}
+
+
+.container {
+    
+    display: flex;
+    display: grid;
+    flex-direction: row;
+    width: 870;
+    
+    /*grid-template-rows: 33.3% 33.3% 33.3% ;*/
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.card {
+    display: flex;  
+    min-width: 290px;
+    min-height: 475px;
+    max-width: 290px;
+    max-height: 475px;
+    overflow: hidden;
+    justify-content: center;  
+    flex-direction: column;
+    border-radius: 30px;
+    
+}
+button:hover {
+    cursor: pointer;
+    background-color:hsl(0, 0%, 95%) ;
+    color: #000;
+}
+
+
+
+
+.sedans {
+    /*background: var(--color-Bright-orange);*/
+    background:#000;
+    
+}
+
+.suvs {
+    background: var(--color-Dark-cyan);
+}
+
+.luxury {
+    background: var(--color-Very-dark-cyan);
+}
+
 .logo {
     margin: 10px;
+}
+.title {
+    color: black;
 }
 
 
