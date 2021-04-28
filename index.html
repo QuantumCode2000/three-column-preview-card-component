@@ -41,9 +41,9 @@
 
       </button>
 
-      <button id="btn2"  >
+      <button  id= "btn2">
 
-        ADD CARDS
+        REMOVE CARDS
         
       </button>
         
@@ -89,22 +89,6 @@
   console.log(hero);*/
 
 
-
-  $("#btn2").addEventListener("click",function(){
-        const  hero = document.getElementById("colorpad");
-        const heroCopy = hero.cloneNode(true) ;
-        
-        $("#container").appendChild(heroCopy);
-        console.log(heroCopy);
-  })
-
-let id=0;
-function x(id){
-          id=++id;
-          console.log(id);
-          return id
-  }
-
   let incremet = 0;
   
 
@@ -113,13 +97,18 @@ function x(id){
         const heroCopy = hero.cloneNode(true);
         heroCopy.removeAttribute("id");
         heroCopy.setAttribute("id",`e${ incremet++ }`);
+
         $("#container").appendChild(heroCopy);
         console.log(heroCopy);
   })
 
-  
+  $("#btn2").addEventListener("click",function(){
+        
+        let container= document.getElementById('container');
+        container.removeChild(container.lastElementChild);
+        
 
-
+  })
 
 
   function $(selector){
